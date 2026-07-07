@@ -31,3 +31,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# oh-my-claudecode state
+.omc/
+
+# local backup archives (not for deploy)
+*.zip
