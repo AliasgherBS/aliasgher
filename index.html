@@ -577,7 +577,7 @@ class Component extends DCLogic {
   }
 
   componentDidMount() {
-    const tryPlay = (v) => { v.muted = true; const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+    const tryPlay = (v) => { v.muted = true; v.loop = true; const p = v.play(); if (p && p.catch) p.catch(() => {}); };
     const vids = [...document.querySelectorAll('video[data-auto]')];
     vids.forEach((v) => {
       tryPlay(v);
